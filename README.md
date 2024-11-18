@@ -1,3 +1,10 @@
+
+### 功能
+在电脑上监测手机屏幕，一旦手机开始刷视频必然会导致像素发生较大变化， \
+于是“刷”的动作就可以被检测到，一旦有刷的动作，就开始随机从单词数据集中抽取单词进行播报。 \
+实现只要在刷视频就会播单词的机制，帮助我们在夜间避免上时间刷视频，和在白天刷视频能够背单词的效果。  \
+
+
 ### 安装
 ```
 conda create --name short_video_recite_words python=3.8
@@ -8,7 +15,7 @@ pip install pandas
 pip install tkinter
 # torch 可以用cpu版本，因为没有计算图
 pip install torch==1.10.0+cpu torchvision==0.11.1+cpu torchaudio==0.10.0 -f https://download.pytorch.org/whl/cpu/torch_stable.html
-```
+```za
 ### 文件
 ```
 utils为有道翻译的支持文件
