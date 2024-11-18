@@ -33,7 +33,7 @@ interval = 2  # 每 2 秒截一次屏
 
 diff_threshold = 90000  # 可以根据需要调整不同时间图片的差异阈值
 
-# 设置语音速度和音量
+设置语音速度和音量
 engine.setProperty('rate', 200)  # 设置语速
 engine.setProperty('volume', 1.0)  # 设置音量
 
