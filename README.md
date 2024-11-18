@@ -12,7 +12,7 @@ pip install torch==1.10.0+cpu torchvision==0.11.1+cpu torchaudio==0.10.0 -f http
 ### 文件
 ```
 utils为有道翻译的支持文件
-dataset_vocab为我自己制作的单词列表，你可以自己淘宝上找一个自己考试的词汇excel表
+dataset_vocab为我自己制作的单词列表，你可以自己淘宝上找一个自己考试的词汇excel表，注意在第一行标上English
 mouse_calibration.py是位置标定程序，根据鼠标的位置给到坐标，调节下方的region参数
 short_video_recite_words.py是主程序，直接用python指令运行
 ```
