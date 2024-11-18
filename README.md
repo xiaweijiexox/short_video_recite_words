@@ -1,6 +1,7 @@
 ### 安装
 ```
-conda create --name short video_recite_words python=3.8
+conda create --name short_video_recite_words python=3.8
+conda activate short_video_recite_words
 pip install pyautogui
 pip install pyttsx3
 pip install pandas 
@@ -8,10 +9,17 @@ pip install tkinter
 # torch 可以用cpu版本，因为没有计算图
 pip install torch==1.10.0+cpu torchvision==0.11.1+cpu torchaudio==0.10.0 -f https://download.pytorch.org/whl/cpu/torch_stable.html
 ```
+### 文件
+```
+utils为有道翻译的支持文件
+dataset_vocab为我自己制作的单词列表，你可以自己淘宝上找一个自己考试的词汇excel表
+mouse_calibration.py是位置标定程序，根据鼠标的位置给到坐标，调节下方的region参数
+short_video_recite_words.py是主程序，直接用python指令运行
+```
 
 ### 可调节的参数（也可以不调）
 ```
-region = (30, 231, 485, 906)  # 左上角 (30, 231)，宽 485，高 906 —— 根据你想要监控的屏幕部分（这个是投屏直接贴着左上角得到的参数）
+region = (30, 231, 485, 906)  # 左上角 (30, 231)，宽 485，高 906 —— 根据你想要监控的屏幕部分（这个是我投屏直接贴着左上角得到的参数）
 
 interval = 2  # 每 2 秒截一次屏
 
@@ -28,4 +36,4 @@ if show == 1:  #词汇可以不显示，直接看print，因为需要时间运�
 
 ```
 
-录频可以用自己选择的录频软件
+录手机频可以用自己选择的录频软件
