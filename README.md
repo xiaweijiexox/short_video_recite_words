@@ -9,9 +9,9 @@ pip install tkinter
 pip install torch==1.10.0+cpu torchvision==0.11.1+cpu torchaudio==0.10.0 -f https://download.pytorch.org/whl/cpu/torch_stable.html
 ```
 
-### 可调节的参数
+### 可调节的参数（也可以不调）
 ```
-region = (30, 231, 485, 906)  # 左上角 (30, 231)，宽 485，高 906 —— 根据你想要监控的屏幕部分
+region = (30, 231, 485, 906)  # 左上角 (30, 231)，宽 485，高 906 —— 根据你想要监控的屏幕部分（这个是投屏直接贴着左上角得到的参数）
 
 interval = 2  # 每 2 秒截一次屏
 
@@ -28,3 +28,4 @@ if show == 1:  #词汇可以不显示，直接看print，因为需要时间运�
 
 ```
 
+录频可以用自己选择的录频软件
