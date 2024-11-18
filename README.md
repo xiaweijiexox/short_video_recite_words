@@ -15,7 +15,7 @@ pip install pandas
 pip install tkinter
 # torch 可以用cpu版本，因为没有计算图
 pip install torch==1.10.0+cpu torchvision==0.11.1+cpu torchaudio==0.10.0 -f https://download.pytorch.org/whl/cpu/torch_stable.html
-```za
+```
 ### 文件
 ```
 utils为有道翻译的支持文件
